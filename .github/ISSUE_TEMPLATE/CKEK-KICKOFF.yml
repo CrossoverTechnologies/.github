@@ -1,4 +1,4 @@
-name: "CHECK-KICKOFF"
+name: "Check-KickOff"
 description: Create a new kickoff check.
 title: "[KICKOFF] - <title>"
 labels: [

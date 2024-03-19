@@ -1,4 +1,4 @@
-name: "CHECK-RETROSPECVTIVE"
+name: "Check-Retrospective"
 description: Create a new retrospective check.
 title: "[RETRO] - <title>"
 labels: [

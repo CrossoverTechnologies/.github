@@ -1,0 +1,73 @@
+name: "CHECK-KICKOFF"
+description: Create a new kickoff check.
+title: "[KICKOFF] - <title>"
+labels: [
+  "check"
+]
+body:
+  - type: dropdown
+    id: documents
+    attributes:
+      label: "Documents format"
+      description: What documents will we use ?
+      multiple: false
+      options:
+        - 2S Computing
+        - Crossover
+    validations:
+      required: true
+  - type: checkboxes
+    id: quest-sheet
+    attributes:
+      label: Is the quest sheet ready ?
+      options:
+      - label: The quest sheet is ready.
+        required: true
+  - type: checkboxes
+    id: daily-planned
+    attributes:
+      label: Is the daily meeting planned ?
+      description: Question about the dailies
+      options:
+      - label: The daily appointments are planned.
+        required: true
+  - type: input
+    id: daily-time
+    attributes:
+      label: "Daily meeting"
+      description: Please enter the daily time
+      placeholder: "09:30"
+    validations:
+      required: true
+  - type: checkboxes
+    id: team-ready
+    attributes:
+      label: Is the team ready ?
+      description: Question about the team
+      options:
+      - label: The team is ready to rock.
+        required: true
+  - type: input
+    id: gdt-assignee
+    attributes:
+      label: "Gdt Assignee"
+      description: Please enter the name of the assignee
+      placeholder: "JojoLeRigolo"
+    validations:
+      required: true
+  - type: checkboxes
+    id: sprint-ready
+    attributes:
+      label: Are the sprint planned ?
+      description: Question about the sprints
+      options:
+      - label: The sprints are planned.
+        required: true
+  - type: input
+    id: sprint-count
+    attributes:
+      label: "Number of sprints"
+      description: Please enter the number of sprints
+      placeholder: "3"
+    validations:
+      required: true

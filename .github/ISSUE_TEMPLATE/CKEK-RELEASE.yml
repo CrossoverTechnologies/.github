@@ -1,0 +1,29 @@
+
+name: "Check-Release"
+description: Create a new release check.
+title: "[RELEASE] - <title>"
+labels: [
+  "check"
+]
+body:
+  - type: checkboxes
+    attributes:
+      label: Were daily appointments kept ?
+      description: Question about the dailies
+      options:
+      - label: The daily appointments were kept.
+        required: true
+  - type: checkboxes
+    attributes:
+      label: Was the board correctly used ?
+      description: Question about the board
+      options:
+      - label: The board was correctly used.
+        required: true
+  - type: checkboxes
+    attributes:
+      label: Was there any demos ?
+      description: Question about the demos
+      options:
+      - label: The demos were done.
+        required: true

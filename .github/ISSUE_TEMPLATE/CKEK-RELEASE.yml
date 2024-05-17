@@ -8,22 +8,29 @@ labels: [
 body:
   - type: checkboxes
     attributes:
-      label: Were daily appointments kept ?
-      description: Question about the dailies
+      label: Were contractual commitments respected ?
+      description: Question about the contract
       options:
-      - label: The daily appointments were kept.
+      - label: The contractual commitments were respected.
         required: true
   - type: checkboxes
     attributes:
-      label: Was the board correctly used ?
-      description: Question about the board
+      label: Was the delivery format respected ?
+      description: Question about the delivery
       options:
-      - label: The board was correctly used.
+      - label: The delivery format was respected.
         required: true
   - type: checkboxes
     attributes:
-      label: Was there any demos ?
-      description: Question about the demos
+      label: Is the version identified and identifiable in the release artifact ?
+      description: Question about the version
       options:
-      - label: The demos were done.
+      - label: The release is identifiable by its version number.
+        required: true
+  - type: checkboxes
+    attributes:
+      label: Is there an available release note ?
+      description: Question about the release note ?
+      options:
+      - label: The release note is available.
         required: true

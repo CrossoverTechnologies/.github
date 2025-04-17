@@ -1,3 +1,12 @@
+---
+name: 🐞 Bug
+about: File a bug/issue
+title: '[BUG] <title>'
+labels: Bug
+assignees: ''
+
+---
+
 ## Description détaillée
 <!--- Provide a detailed description of the change or addition you are proposing -->
 
